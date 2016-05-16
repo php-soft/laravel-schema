@@ -43,7 +43,7 @@ class DumpSql extends Command
     public function handle()
     {
         $default = Config::get('database.default');
-
+// dd(Config::get('database'));
         if ($default !== 'mysql') {
             $this->info('Only support MySQL');
 
@@ -59,6 +59,7 @@ class DumpSql extends Command
         }
 
         $username = Config::get('database.connections.' . $dbconnect . '.username');
+
         $password = Config::get('database.connections.' . $dbconnect . '.password');
         $host = Config::get('database.connections.' . $dbconnect . '.host');
         $database = Config::get('database.connections.' . $dbconnect . '.database');

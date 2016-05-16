@@ -1,11 +1,12 @@
 <?php
 
-class SchemaTest extends SchemaTestCase
+class SchemaTest extends TestCase
 {
     public function testNoOptions()
     {
-        $dbFile = fopen(base_path() . '/packages/Schema/tests/schema.sql', 'r');
-        $fileSize = filesize(base_path() . '/packages/Schema/tests/schema.sql');
+        $dbFile = fopen(__DIR__ . '/schema.sql', 'r');
+        $fileSize = filesize(__DIR__ . '/schema.sql');
+        // dd(Config::get('database'));
 
         Artisan::call('db:schema', ['--force' => true]);
 
