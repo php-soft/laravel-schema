@@ -37,11 +37,6 @@
 
         ]
     },
-    "scripts": {
-        "post-install-cmd": [
-            "composer install --optimize-autoloader"
-        ]
-    },
     "config": {
         "preferred-install": "dist"
     }
