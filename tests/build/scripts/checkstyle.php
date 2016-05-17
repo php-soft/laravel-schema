@@ -1,6 +1,6 @@
 <?php
 
-function run($path)
+function run2($path)
 {
     $xml = simplexml_load_file($path);
 
