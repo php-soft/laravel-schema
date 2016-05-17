@@ -17,7 +17,7 @@
             <directory>./packages/Settings/tests/</directory> -->
         </testsuite>
     </testsuites>
-    <!-- <filter>
+    <filter>
         <whitelist>
             <directory suffix=".php">app/</directory>
             <directory suffix=".php">packages/*/src/</directory>
@@ -29,7 +29,7 @@
             <directory>packages/Schema/database.php</directory>
             <directory>packages/Schema/src/Console/Kernel.php</directory>
         </whitelist>
-    </filter> -->
+    </filter>
 
     <logging>
         <log type="coverage-text" target="php://stdout" showUncoveredFiles="true" showOnlySummary="true"/>

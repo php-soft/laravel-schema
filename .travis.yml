@@ -9,6 +9,7 @@ services:
 before_script:
   - mysql -e 'create database schema_test;'
   - composer update
+  - php artisan optimize
   - composer install --prefer-source --no-interaction --dev
 
 script:
