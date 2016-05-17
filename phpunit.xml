@@ -42,7 +42,6 @@
         <env name="SESSION_DRIVER" value="array"/>
         <env name="QUEUE_DRIVER" value="sync"/>
         <env name="MAIL_DRIVER" value="log"/>
-        <env name="DB_DATABASE" value="schema_test 2"/>
-        <env name="DB_USERNAME" value="root"/>
+        <env name="DB_DATABASE" value="schema_test"/>
     </php>
 </phpunit>
