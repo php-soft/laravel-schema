@@ -1,5 +1,5 @@
 {
-    "name": "autn/laravel-schema",
+    "name": "php-soft/laravel-schema",
     "description": "The Laravel schema package.",
     "keywords": ["framework", "laravel", "schema", "database"],
     "support": {
